@@ -1,4 +1,4 @@
-package ru.job4j;
+package ru.job4j.max;
 
 /**
  * Created by artursafiullin on 2017-02-27.

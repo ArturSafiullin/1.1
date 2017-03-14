@@ -4,7 +4,7 @@
  * @since 21.02.2017
  * @version 1
 */
-package ru.job4j;
+package ru.job4j.calculator;
 
 //Create a class
 public class Calculator {

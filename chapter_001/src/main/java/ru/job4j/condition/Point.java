@@ -1,4 +1,4 @@
-package ru.job4j;
+package ru.job4j.condition;
 
 /**
  * Created by artursafiullin on 2017-03-05.
@@ -6,6 +6,19 @@ package ru.job4j;
 public class Point {
     private int x;
     private int y;
+
+    public static void main(String[] args) {
+        Point point = new Point(2, 1);
+        int a = 4;
+        int b = 1;
+        int result = point.func(a, b);
+        System.out.println("Координаты " + result);
+
+    }
+
+    public int func(int a, int b) {
+        return a * x + b;
+    }
 
     public Point(int x, int y) {
         this.x = x;
@@ -20,13 +33,20 @@ public class Point {
         return this.y;
     }
 
-    boolean isSame(Point a) {
-        if (x == a.x && y == a.y) {
-            return true;
-        } else {
-            return false;
+    public boolean is(int a, int b) {
+        int result = this.func(a, b);
+        return result == this.y;
+
         }
     }
+
+    //boolean isSame(Point a) {
+    //    if (x == a.x && y == a.y) {
+           // return true;
+        //} else {
+       //     return false;
+      //  }
+
 
     //public boolean is(int a, int b) {
       //  if (x == a.x && y == a.y) {
@@ -47,5 +67,5 @@ public class Point {
         //  }
 //}
 
-    }
+  //  }
 //}
