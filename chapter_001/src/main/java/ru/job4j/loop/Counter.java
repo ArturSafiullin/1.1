@@ -12,10 +12,9 @@ public class Counter {
         for (start = 2; start <= finish; start += 2) {
             if (start % 2 == 0) {
                 sum += start;
-                return  sum;
+                System.out.println("Сумма четных чисел равна " + sum);
             }
-            System.out.println("Сумма четных чисел равна " + sum);
-
         }
+        return sum;
     }
 }

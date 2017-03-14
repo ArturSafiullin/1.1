@@ -10,14 +10,12 @@ import static org.junit.Assert.assertThat;
  */
 public class CounterTest {
     @Test
-    public void counterTest(){
-        //Counter evenNum = new Counter();
-        //evenNum.add(1, 10);
-        ///int sum = evenNum.add(1, 10);
+    public void whenSumEvenNumbersFromOneToTenThenThirty() {
+        //напишите здесь тест, проверяющий, что сумма чётных чисел от 1 до 10 при вызове метода counter.add будет равна 30.
+        Counter evenNum = new Counter();
+        evenNum.add(1, 10);
+        int sum = evenNum.add(1, 10);
         int expected = 30;
-       // assertThat(sum, is (expected));
-
+        assertThat(sum, is (expected));
     }
 }
-    //int result = number.max(12, 22);
-    //assertThat(result, is(22));
