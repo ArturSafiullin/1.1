@@ -7,16 +7,15 @@ package ru.job4j.loop;
 public class Counter {
 
     public int add(int start, int finish) {
-        //int start = 1;
-        //int finish = 10;
+        int sum = 0;
 
         for (start = 2; start <= finish; start += 2) {
             if (start % 2 == 0) {
-                System.out.println(finish + " ");
-                finish += start;
+                sum += start;
+                return  sum;
             }
+            System.out.println("Сумма четных чисел равна " + sum);
 
         }
-
     }
 }
