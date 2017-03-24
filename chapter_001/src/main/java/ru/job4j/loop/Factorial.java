@@ -3,14 +3,20 @@ package ru.job4j.loop;
 /**
  * Created by artursafiullin on 2017-03-08.
  */
-/*public class Factorial {
-        public int calc() {
-            int n = 1;
-            int result = 5;
-            for (int i = 1; i <= result; i++) {
-                n *= (i + 1);
-                System.out.println("Факториал числа " + n + "равен " + result);
-            }
+public class Factorial {
+    //int N;
+    //int n;
+    //int result;
+
+    public int calc(int n) {
+        return result;
+    }
+
+    public int result(int N){
+        for (int n = 1; n <= N; n++) {
+            n *= n;
+            System.out.println("Факториал числа " + n + "равен ");
         }
     }
-*/
+}
+
